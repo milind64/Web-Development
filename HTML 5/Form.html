@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <h3>Travel Form for our trip</h3>
+        <form action="form.php">
+          <input type="text" placeholder="Enter your name" /><br /><br />
+          <!--* Input elements can be of type text,checkbox,radio button,submit file -->
+          <label for="sectionida">
+            <input
+              type="radio"
+              value="section A"
+              name="section"
+              id="sectionida"
+            />section A
+          </label>
+          <br />
+          <label for="sectionidb">
+            <input
+              type="radio"
+              value="section B"
+              name="section"
+              id="sectionidb"
+            />section B
+          </label>
+          <br />
+          <label for="sectionidc">
+            <input
+              type="radio"
+              value="section C"
+              name="section"
+              id="sectionidc"
+              class="red"
+            />section C
+          </label>
+        </form>
+      </div>
+
+      <div>
+        <label for="foodcanteen">
+          <input
+            type="checkbox"
+            name="Want Food Canteen Card"
+            id="foodcanteen"
+            class="red"
+          />Canteen Food
+        </label>
+        <br />
+        <label for="time">
+          <input
+            type="datetime-local"
+            name="date-time"
+            id="time"
+            class="green"
+          />
+        </label>
+        <br />
+        <label for="justdate">
+          <input type="date" name="date" id="justdate" class="green" />
+        </label>
+      </div>
+      <div>
+        <form action="form1.php">
+          <label for="text">
+            <textarea
+              name="explain"
+              id="text"
+              cols="30"
+              rows="10"
+              placeholder="Explain why you should be recruited"
+            ></textarea>
+          </label>
+          <br>
+          <label for="car" id="cars">
+            <select name="cars" id="cars">
+                <option value="No Car">No Car</option>
+                <option value="mercedes" >mercedes</option>
+                <option value="audi" >audi</option>
+                <option value="lambo" >lambo</option>
+                
+            </select>
+          </label>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
